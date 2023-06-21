@@ -9,7 +9,7 @@ module "asg" {
   desired_capacity          = 3
   wait_for_capacity_timeout = 0
   health_check_type         = "EC2"
-  vpc_zone_identifier       = data.terraform_remote_state.vpc.outputs.public.subnets
+  vpc_zone_identifier       = data.terraform_remote_state.vpc.outputs.private.subnets
 
   # Launch template
   launch_template_name        = "example-asg"
