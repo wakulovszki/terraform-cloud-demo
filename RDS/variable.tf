@@ -1,3 +1,3 @@
 variable region {
-    var = string
+    = string
 }
